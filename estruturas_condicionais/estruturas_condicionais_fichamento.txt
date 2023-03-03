@@ -1,0 +1,32 @@
+Atividade
+
+Construa um fichamento (descrição teórica técnica) sobre os conceitos de Entradas
+e Saídas de um programa de computador. Para isso, utilize o conhecimento
+adquirido no curso, sua experiência na área e/ou fontes de pesquisa. O fichamento
+deve conter minimamente os seguintes itens:
+
+1) O que é um programa de computador sequencial?
+
+R: Um programa de computador sequencial utiliza um método de programação, que consiste em fornecer instruções em uma ordem sequencial.
+Sem desvios ou condicionais.
+
+2) Conceito de Entrada e Saída de um programa de computador.
+
+R: O conceito de entrada e saída consiste em receber uma informação, processar ela e fornecer a saída. Por exemplo, em um formulário 
+é necessário que o usuário insira os dados para que o programa valide essa informações e forneça uma saída.
+
+3) Importância da interpretação dos requisitos para a construção de um
+programa de computador.
+
+R: A parte mais importante do projeto é a análise de requisitos do cliente, pois é nessa fase que é identificado tudo que o programa
+precisa e tudo que o cliente quer que o produto tenha. E com essa fase bem definida, é possível diminuir o retrabalho, diminuir a 
+possibilidade de ter algum bug, etc...
+
+4) Descreva ao menos dois exemplos de programas de computador conhecidos
+amplamente que utilizam o conceito de Entradas e Saídas em sua estrutura.
+
+R: Whatsapp, Telegram, formulários.
+
+Fonte:
+- DEPARTAMENTO DE ENGENHARIA DE COMPUTAÇÃO E AUTOMAÇÃO UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE 
+  (https://www.dca.ufrn.br/~lmarcos/courses/DCA800/pdf/algoritmos_parte2.pdf)
