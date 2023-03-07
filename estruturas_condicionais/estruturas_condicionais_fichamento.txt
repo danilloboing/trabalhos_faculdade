@@ -1,32 +1,35 @@
 Atividade
+Construa um fichamento (descrição teórica técnica) sobre os conceitos de Estruturas
+condicionais (Se e Senão ou If e Else) de um programa de computador. Para isso,
+utilize o conhecimento adquirido no curso, sua experiência na área e/ou fontes de
+pesquisa. O fichamento deve conter os seguintes itens:
 
-Construa um fichamento (descrição teórica técnica) sobre os conceitos de Entradas
-e Saídas de um programa de computador. Para isso, utilize o conhecimento
-adquirido no curso, sua experiência na área e/ou fontes de pesquisa. O fichamento
-deve conter minimamente os seguintes itens:
+1) Importância da interpretação do problema para a construção de um
+programa de computador que possui mais de um fluxo.
 
-1) O que é um programa de computador sequencial?
+R:É importantíssimo avaliar, antes de "codar", o problema que deve ser resolvido ou o programa que deve ser desenvolvido. 
+  Pois nesse processo, o desenvolvedor pode definir os fluxos que o programa irá ter, tipos de dados necessários e a 
+  entender a complexidade do programa. Assim, tendo mais objetividade quando for realmente programar.
 
-R: Um programa de computador sequencial utiliza um método de programação, que consiste em fornecer instruções em uma ordem sequencial.
-Sem desvios ou condicionais.
+2) Conceito de estruturas condicionais em um programa de computador.
 
-2) Conceito de Entrada e Saída de um programa de computador.
+R: Estruturas condicionais são utilizadas quando temos alguma entrada de dados e precisamos verificar algumas condições
+   para fornecer uma saída de algum determinado dado. As condições são fornecidas ao computador, ele processa as informações
+   dentro das condições e nos dá uma resposta. As estruturas condicionais são SE, SENÃO, SENAO SE e ESCOLHA-CASO.
 
-R: O conceito de entrada e saída consiste em receber uma informação, processar ela e fornecer a saída. Por exemplo, em um formulário 
-é necessário que o usuário insira os dados para que o programa valide essa informações e forneça uma saída.
+3) Explique com suas palavras cada uma das expressões lógicas utilizadas em
+estruturas condicionais.
 
-3) Importância da interpretação dos requisitos para a construção de um
-programa de computador.
+R: 
+> - Maior
+< - Menor
+>= - Maior ou igual
+<= - Menor ou Igual
+== - Igual
+!= - Diferente
 
-R: A parte mais importante do projeto é a análise de requisitos do cliente, pois é nessa fase que é identificado tudo que o programa
-precisa e tudo que o cliente quer que o produto tenha. E com essa fase bem definida, é possível diminuir o retrabalho, diminuir a 
-possibilidade de ter algum bug, etc...
+4) Descreva ao menos dois exemplos de programas de computador
+conhecidos amplamente que utilizam estruturas condicionais em seu código
+fonte.
 
-4) Descreva ao menos dois exemplos de programas de computador conhecidos
-amplamente que utilizam o conceito de Entradas e Saídas em sua estrutura.
-
-R: Whatsapp, Telegram, formulários.
-
-Fonte:
-- DEPARTAMENTO DE ENGENHARIA DE COMPUTAÇÃO E AUTOMAÇÃO UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE 
-  (https://www.dca.ufrn.br/~lmarcos/courses/DCA800/pdf/algoritmos_parte2.pdf)
+R: Formulários, logins.

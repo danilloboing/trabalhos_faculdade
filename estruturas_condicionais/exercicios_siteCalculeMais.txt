@@ -1,0 +1,27 @@
+Exercícios de lógica e condicionalidade - Site calcule mais
+
+1/3
+1- D - Lívia não é estudiosa ou Marcos não decora. Pois as duas proposições estão em negação.
+2- B - Brasília não é a Capital Federal ou os Territórios Federais não integram a União. Pois as duas proposições estão em negação.
+3- B - hoje não é domingo ou amanhã choverá. Pois as duas proposições estão em negação.
+4- B - João não comprou um notebook ou comprou um celular. Pois está na negativa segundo o raciocínio lógico proposicional.
+5- C - Ana não é dentista e fez universidade. Pois as duas estão e acordo com a equivalência lógica.
+6- E - O Sol não é uma estrela ou a Lua é um planeta. Pois as duas estão e acordo com a equivalência lógica.
+7- A - Maria não é estudiosa ou José não decora. Pois as duas estão e acordo com a equivalência lógica.
+8- C - Carlos não foi à escola ou não foi bem na prova. Pois está na negativa segundo o raciocínio lógico proposicional.
+9- B - O aluno ter estudado é condição suficiente para ter sido aprovado; Pois se o aluno estudou, ele aprendeu. Logo, ele é aprovado.
+10- A - (p ^ q).
+
+2/3
+1- D - 8
+2- A -  Se Carlos for a festa, então Bernardo também irá à festa.
+3- A - Certo. Pois ela é sempre verdadeira.
+4- A -  se um funcionário não ganhou um bônus de 100 reais, então ele faltou.
+5- B - falsa – falsa – falsa. Pois Beto e Carlos são culpados.
+
+3/3
+1- A - Algum objeto da caixa não é vermelho e não é redondo.
+2- B - Pedro fica feliz. Pois Maria foi ao Shopping.
+3- D - Todo Mex é Ox. Poque todo OX é Nex
+4- C - fiz um bolo. Pois comprei leite.
+5- C - Rui não é meu vizinho; Pois nenhum vizinho meu é engenheiro. E Rui é engenheiro.
