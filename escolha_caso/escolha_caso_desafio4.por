@@ -18,7 +18,7 @@ programa
 		escreva ("[1] Filmes \n[2] Séries\n[3] Documentários \n")
 		escreva ("\nEscolha uma das opções: -> ")
 		leia (respostaUsuario)
-
+		escreva ("________________________________________________________________________\n")
 		escolha (respostaUsuario)
 		{
 			caso 1:
@@ -65,12 +65,46 @@ programa
 						escreva ("\n")
 					} enquanto ((respostaUsuario <= 0) ou (respostaUsuario > 2))
 				}
-			
-		}
-		
-		
+				escolha (respostaUsuario)
+				{
+					caso 1:
+						escreva ("Filme selecionado: Black Mirror")
+						pare
 
-		
+					caso 2:
+						escreva ("Filme selecionado: Better Than Us")
+						pare
+				}
+				pare
+
+			caso 3:
+				escreva ("\nCATEGORIA: DOCUMENTÁRIOS\n")
+				escreva ("\nSubcategorias: \n")
+				escreva ("[1] Tecnologia \n[2] Biografia \n")
+				escreva ("\nEscolha umas das subcategorias: -> ")
+				leia (respostaUsuario)
+				se ((respostaUsuario <= 0) ou (respostaUsuario > 2))
+				{
+					faca
+					{
+						escreva ("Número inválido. Tente novamente. ")
+						leia (respostaUsuario)
+						escreva ("\n")
+					} enquanto ((respostaUsuario <= 0) ou (respostaUsuario > 2))
+				}
+				escolha (respostaUsuario)
+				{
+					caso 1:
+						escreva ("Filme selecionado: Watson da IBM: a máquina mais inteligente da terra")
+						pare
+
+					caso 2:
+						escreva ("Filme selecionado: O código Bill Gates")
+						pare
+				}
+				pare
+		}
+		escreva ("\n-------------------------------------------------------------------------\n")	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -78,7 +112,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1789; 
+ * @POSICAO-CURSOR = 725; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

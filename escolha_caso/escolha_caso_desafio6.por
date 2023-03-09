@@ -1,5 +1,9 @@
 programa
 {
+	// Desafio 6
+	//Feito por Danillo Boing de Souza
+	//Versﾃ｣o 1.0
+	//Data 08/03/2023
 	inteiro nomeMes
 	
 	funcao inicio()
@@ -25,51 +29,51 @@ programa
 		escolha(nomeMes)
 		{
 			caso 1:
-				escreva ("Janeiro")
+				escreva ("Janeiro tem 31 dias.\n")
 				pare
 				
 			caso 2:
-				escreva ("Fevereiro")
+				escreva ("Fevereiro tem 28 dias em anos comuns e 29 em anos bissextos.\n")
 				pare
 
 			caso 3:
-				escreva ("Março")
+				escreva ("Março tem 31 dias.\n")
 				pare
 
 			caso 4:
-				escreva ("Abril")
+				escreva ("Abril tem 30 dias. \n")
 				pare
 
 			caso 5:
-				escreva ("Maio")
+				escreva ("Maio tem 31 dias. \n")
 				pare
 
 			caso 6:
-				escreva ("Junho")
+				escreva ("Junho tem 30 dias. \n")
 				pare
 
 			caso 7:
-				escreva ("Julho")
+				escreva ("Julho tem 31 dias. \n")
 				pare
 
 			caso 8:
-				escreva ("Agosto")
+				escreva ("Agosto tem 31 dias. \n")
 				pare
 
 			caso 9:
-				escreva ("Setembro")
+				escreva ("Setembro tem 30 dias. \n")
 				pare
 
 			caso 10:
-				escreva ("Outubro")
+				escreva ("Outubro tem 31 dias. \n")
 				pare
 
 			caso 11:
-				escreva ("Novembro")
+				escreva ("Novembro tem 30 dias. \n")
 				pare
 
 			caso 12:
-				escreva ("Dezembro")
+				escreva ("Dezembro tem 31 dias. \n")
 				pare
 
 			caso contrario:
@@ -83,7 +87,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1135; 
+ * @POSICAO-CURSOR = 86; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

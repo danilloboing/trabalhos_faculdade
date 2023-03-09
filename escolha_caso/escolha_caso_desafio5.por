@@ -1,5 +1,10 @@
 programa
 {
+	// Desafio 5
+	//Feito por Danillo Boing de Souza
+	//Versﾃ｣o 1.0
+	//Data 08/03/2023
+	
 	inclua biblioteca Matematica
 	real valorCompras = 0.0, valorFinal = 0.0
 	inteiro opcaoPag = 0, opcaoParcPag = 0, qtdParc = 0
@@ -7,7 +12,11 @@ programa
 	
 	funcao inicio()
 	{
-		escreva ("Bem-vindo ao sistema de vendas das lojas VestADS!\n")
+		escreva ("-------------------------------------------------------------------------\n")
+		escreva ("                               V e s t A D S                             \n")
+		escreva ("-------------------------------------------------------------------------\n")
+		escreva ("\n")
+		escreva ("Bem-vindo(a) a VestADS!\n")
 		escreva ("Insira o valor das compras: R$ ")
 		leia (valorCompras)
 
@@ -68,7 +77,7 @@ programa
 				{
 					escreva ("A compra é: \n")
 					escreva ("[1] À vista\n")
-					escreva ("[2] À prazo (2x)\n")
+					escreva ("[2] À prazo\n")
 					leia (opcaoParcPag)
 					limpa()
 
@@ -129,7 +138,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 0; 
+ * @POSICAO-CURSOR = 86; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
