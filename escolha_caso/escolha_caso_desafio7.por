@@ -1,6 +1,6 @@
 programa
 {
-	// Desafio 6
+	// Desafio 7
 	//Feito por Danillo Boing de Souza
 	//Versﾃ｣o 1.0
 	//Data 08/03/2023
@@ -121,7 +121,7 @@ programa
 
 					caso 2:
 						escreva ("\n-------------------------------------------------------------------------")
-						escreva("\nNFCC NORTH\n")
+						escreva("\nNFC NORTH\n")
 						escreva ("\nTimes:\n")
 						escreva ("CHICAGO BEARS\n")
 						escreva ("DETROIT LIONS\n")
@@ -159,7 +159,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3476; 
+ * @POSICAO-CURSOR = 27; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
