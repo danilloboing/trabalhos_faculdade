@@ -1,6 +1,6 @@
 programa
 {
-	// Desafio 7
+	// Desafio 7
 	//Feito por Danillo Boing de Souza
 	//Versﾃ｣o 1.0
 	//Data 08/03/2023
@@ -20,12 +20,9 @@ programa
 		leia (respostaUsuario)
 		se ((respostaUsuario < 1) ou (respostaUsuario > 2))
 		{
-			faca
-			{
-				escreva ("NÚMERO INVÁLIDO. Tente novamente.\n")
-				escreva ("-> ")
-				leia (respostaUsuario)
-			} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 2))
+			limpa()
+			escreva ("NÚMERO INVÁLIDO. Reinicie o Programa.\n")
+			retorne
 		}
 		limpa()
 		escreva ("-------------------------------------------------------------------------\n")
@@ -42,12 +39,9 @@ programa
 				leia (respostaUsuario)
 				se ((respostaUsuario < 1) ou (respostaUsuario > 4))
 				{
-					faca
-					{
-						escreva ("NÚMERO INVÁLIDO. Tente novamente.\n")
-						escreva ("-> ")
-						leia (respostaUsuario)
-					} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 4))
+					limpa()
+					escreva ("NÚMERO INVÁLIDO. Reinicie o Programa.\n")
+					retorne
 				}
 				escolha (respostaUsuario)
 				{
@@ -100,12 +94,9 @@ programa
 				leia (respostaUsuario)
 				se ((respostaUsuario < 1) ou (respostaUsuario > 4))
 				{
-					faca
-					{
-						escreva ("NÚMERO INVÁLIDO. Tente novamente.\n")
-						escreva ("-> ")
-						leia (respostaUsuario)
-					} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 4))
+					limpa()
+					escreva ("NÚMERO INVÁLIDO. Reinicie o Programa.\n")
+					retorne
 				}
 				escolha (respostaUsuario)
 				{
@@ -159,7 +150,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 27; 
+ * @POSICAO-CURSOR = 732; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

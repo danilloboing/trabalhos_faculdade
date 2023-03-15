@@ -4,7 +4,7 @@ programa
 	//Feito por Danillo Boing de Souza
 	//Versﾃ｣o 1.0
 	//Data 06/03/2023
-	caracter simboloOperador
+	caracter simboloOperador
 	real n1, n2, resultado
 	
 	funcao inicio()
@@ -45,11 +45,9 @@ programa
 			caso '/':
 				se (n2 == 0)
 				{
-					faca
-					{
-						escreva ("\nO 2º número não pode ser 0. Digite outro: ")
-						leia (n2)
-					} enquanto (n2 == 0)
+					limpa()
+					escreva ("\n[ERRO] \nO 2º número não pode ser 0.\n ")
+					retorne
 				}	
 				resultado = n1 / n2
 				escreva ("\nO resultado de " + n1 + " / " + n2 + " é igual a " + resultado)	
@@ -63,7 +61,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1559; 
+ * @POSICAO-CURSOR = 1384; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

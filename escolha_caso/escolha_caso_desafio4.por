@@ -18,6 +18,12 @@ programa
 		escreva ("[1] Filmes \n[2] Séries\n[3] Documentários \n")
 		escreva ("\nEscolha uma das opções: -> ")
 		leia (respostaUsuario)
+		se ((respostaUsuario <= 0) ou (respostaUsuario > 2))
+		{
+			limpa()
+			escreva ("Número inválido. Reinicie o Programa.\n ")
+			retorne
+		}
 		escreva ("________________________________________________________________________\n")
 		escolha (respostaUsuario)
 		{
@@ -30,13 +36,9 @@ programa
 				escreva ("\n")
 				se ((respostaUsuario <= 0) ou (respostaUsuario > 2))
 				{
-					faca
-					{
-						escreva ("Número inválido. Tente novamente. ")
-						leia (respostaUsuario)
-						escreva ("\n")
-						
-					} enquanto ((respostaUsuario <= 0) ou (respostaUsuario > 2))
+					limpa()
+					escreva ("Número inválido. Reinicie o Programa. \n")
+					retorne
 				}
 				escolha (respostaUsuario)
 				{
@@ -58,12 +60,9 @@ programa
 				leia (respostaUsuario)
 				se ((respostaUsuario <= 0) ou (respostaUsuario > 2))
 				{
-					faca
-					{
-						escreva ("Número inválido. Tente novamente. ")
-						leia (respostaUsuario)
-						escreva ("\n")
-					} enquanto ((respostaUsuario <= 0) ou (respostaUsuario > 2))
+					limpa()
+					escreva ("Número inválido. Reinicie o Programa. \n")
+					retorne
 				}
 				escolha (respostaUsuario)
 				{
@@ -85,12 +84,9 @@ programa
 				leia (respostaUsuario)
 				se ((respostaUsuario <= 0) ou (respostaUsuario > 2))
 				{
-					faca
-					{
-						escreva ("Número inválido. Tente novamente. ")
-						leia (respostaUsuario)
-						escreva ("\n")
-					} enquanto ((respostaUsuario <= 0) ou (respostaUsuario > 2))
+					limpa()
+					escreva ("Número inválido. Reinicie o Programa. \n")
+					retorne
 				}
 				escolha (respostaUsuario)
 				{
@@ -112,7 +108,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 725; 
+ * @POSICAO-CURSOR = 2433; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

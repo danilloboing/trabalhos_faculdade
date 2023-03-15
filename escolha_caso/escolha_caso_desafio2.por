@@ -7,7 +7,8 @@ programa
 	inteiro ultNumPlaca
 	
 	funcao inicio()
-	{
+	{	
+		escreva ("A prefeitura de Chuville quer implantar um sistema de rodízio de veículos, a fim de diminuir os congestionamentos da cidade.\n\n")
 		escreva("Insira o último número da sua placa: ")
 		leia (ultNumPlaca)
 		escreva ("\n")
@@ -63,7 +64,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 96; 
+ * @POSICAO-CURSOR = 275; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -35,11 +35,9 @@ programa
 		leia (respostaUsuario)
 		se ((respostaUsuario < 1) ou (respostaUsuario > 8))
 		{
-			faca
-			{
-				escreva ("Número inválido. Tente Novamente: -> ")
-				leia (respostaUsuario)
-			} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 8))
+			limpa()
+			escreva ("NÚMERO INVÁLIDO. Reinicie o Programa.\n")
+			retorne
 		}
 		limpa()
 		escreva ("-------------------------------------------------------------------------\n")
@@ -120,7 +118,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 10; 
+ * @POSICAO-CURSOR = 1576; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

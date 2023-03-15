@@ -1,5 +1,5 @@
 programa
-{	
+{	
 	// Desafio Extra 1
 	//Feito por Danillo Boing de Souza
 	//Versﾃ｣o 1.0
@@ -37,14 +37,12 @@ programa
 		leia (respostaUsuario)
 		se ((respostaUsuario < 1) ou (respostaUsuario > 13))
 		{
-			faca 
-			{
-				escreva ("Número Inválido. Tente novamente. -> ")
-				leia (respostaUsuario)
-			} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 13))
+			limpa()
+			escreva ("NÚMERO INVÁLIDO. Reinicie o Programa.\n")
+			retorne
 		}
-		limpa()
 		
+		limpa()
 		escreva ("-------------------------------------------------------------------------\n")
 		escreva ("                            CADASTRO DO PRODUTO                          \n")
 		escreva ("-------------------------------------------------------------------------\n")
@@ -126,7 +124,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 149; 
+ * @POSICAO-CURSOR = 1294; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

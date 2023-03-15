@@ -15,16 +15,13 @@ programa
 		escreva ("\n")
 
 		escreva ("Temos esses modelos disponíveis: \n")
-		escreva ("\n[1] Sedã \n[2] Conversível \n[3] Hatch \n[4] Minivan \n")
+		escreva ("\n[1] Sedã \n[2] Conversível \n[3] Hatch \n[4] Picapes \n[5] Minivan \n")
 		escreva ("\nSelecional qual modelo você deseja: -> ")
 		leia (respostaUsuario)
-		se ((respostaUsuario < 1) ou (respostaUsuario > 4))
-		{
-			faca
-			{
-				escreva ("Número inválido. Tente Novamente: -> ")
-				leia (respostaUsuario)
-			} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 4))
+		se ((respostaUsuario < 1) ou (respostaUsuario > 5))
+		{		
+			escreva ("Número Inválido. Reinicie o programa.\n")
+			retorne
 		}
 		limpa()
 		escreva ("-------------------------------------------------------------------------\n")
@@ -42,12 +39,9 @@ programa
 				escreva ("\nSelecione qual ano você deseja: -> ")
 				leia (respostaUsuario)
 				se ((respostaUsuario < 1) ou (respostaUsuario > 3))
-				{
-					faca
-					{
-						escreva ("Número inválido. Tente Novamente: -> ")
-						leia (respostaUsuario)
-					} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 3))
+				{		
+					escreva ("Número Inválido. Reinicie o programa.\n")
+					retorne
 				}
 				limpa()
 				escreva ("-------------------------------------------------------------------------\n")
@@ -82,12 +76,9 @@ programa
 				escreva ("\nSelecione qual ano você deseja: -> ")
 				leia (respostaUsuario)
 				se ((respostaUsuario < 1) ou (respostaUsuario > 3))
-				{
-					faca
-					{
-						escreva ("Número inválido. Tente Novamente: -> ")
-						leia (respostaUsuario)
-					} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 3))
+				{		
+					escreva ("Número Inválido. Reinicie o programa.\n")
+					retorne
 				}
 				limpa()
 				escreva ("-------------------------------------------------------------------------\n")
@@ -122,12 +113,9 @@ programa
 				escreva ("\nSelecione qual ano você deseja: -> ")
 				leia (respostaUsuario)
 				se ((respostaUsuario < 1) ou (respostaUsuario > 3))
-				{
-					faca
-					{
-						escreva ("Número inválido. Tente Novamente: -> ")
-						leia (respostaUsuario)
-					} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 3))
+				{		
+					escreva ("Número Inválido. Reinicie o programa.\n")
+					retorne
 				}
 				limpa()
 				escreva ("-------------------------------------------------------------------------\n")
@@ -154,20 +142,54 @@ programa
 				}
 				pare
 
-			// MINIVANS
+			// PICAPES
 			caso 4:
+				escreva ("Categoria: Picape\n")
+				escreva ("\nTemos Picapes nos seguintes anos:\n")
+				escreva ("\n[1] 2015 \n[2] 2018 \n[3] 2023 \n")
+				escreva ("\nSelecione qual ano você deseja: -> ")
+				leia (respostaUsuario)
+				se ((respostaUsuario < 1) ou (respostaUsuario > 3))
+				{		
+					escreva ("Número Inválido. Reinicie o programa.\n")
+					retorne
+				}
+				limpa()
+				escreva ("-------------------------------------------------------------------------\n")
+				escreva ("                              A L U G U E L                              \n")
+				escreva ("-------------------------------------------------------------------------\n")
+				escreva ("\n")
+				
+				escolha (respostaUsuario)
+				{
+					caso 1: 
+						escreva ("Categoria: Picape \nAno: 2015 \n")
+						escreva ("Modelos Disponíveis: \n -> FIAT TORO\n")
+						pare
+
+					caso 2: 
+						escreva ("Categoria: Picape \nAno: 2018 \n")
+						escreva ("Modelos Disponíveis: \n -> FIAT STRADA\n")
+						pare
+
+					caso 3: 
+						escreva ("Categoria: Picape \nAno: 2023 \n")
+						escreva ("Modelos Disponíveis: \n -> VOLKSWAGEN AMAROK\n")
+						pare
+				}
+				pare
+				
+			// MINIVANS
+			caso 5:
 				escreva ("Categoria: Minivan\n")
 				escreva ("\nTemos minivan nos seguintes anos:\n")
 				escreva ("\n[1] 2015 \n[2] 2018 \n[3] 2023 \n")
 				escreva ("\nSelecione qual ano você deseja: -> ")
 				leia (respostaUsuario)
 				se ((respostaUsuario < 1) ou (respostaUsuario > 3))
-				{
-					faca
-					{
-						escreva ("Número inválido. Tente Novamente: -> ")
-						leia (respostaUsuario)
-					} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 3))
+				{		
+					escreva ("Número Inválido. Reinicie o programa.\n")
+					retorne
 				}
 				limpa()
 				escreva ("-------------------------------------------------------------------------\n")
@@ -202,7 +224,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 6431; 
+ * @POSICAO-CURSOR = 561; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

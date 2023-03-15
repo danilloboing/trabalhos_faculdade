@@ -22,7 +22,7 @@ programa
 		escreva ("[10] Outubro\n")
 		escreva ("[11] Novembro\n")
 		escreva ("[12] Dezembro\n")
-		escreva("\nInsira o número do mês que você deseja: ")
+		escreva("\nInsira o número do mês que você deseja para ver quantos dias eles teram em 2023: ")
 		leia (nomeMes)
 		limpa()
 
@@ -87,7 +87,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 86; 
+ * @POSICAO-CURSOR = 161; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

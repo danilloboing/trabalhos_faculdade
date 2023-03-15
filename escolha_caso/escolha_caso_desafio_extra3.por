@@ -29,21 +29,17 @@ programa
 		leia (codProduto)
 		se ((codProduto < 100) ou (codProduto > 105))
 		{
-			faca
-			{
-			escreva ("Número inválido. Tente novamente: -> ")
-			leia (codProduto)
-			} enquanto ((codProduto < 100) ou (codProduto > 105))
+			limpa()
+			escreva ("NÚMERO INVÁLIDO. Reinicie o Programa.\n")
+			retorne
 		}
 		escreva ("\nDigite quantidade que deseja: -> ")
 		leia (quantidade)
 		se (quantidade <= 0)
 		{
-			faca
-			{
-			escreva ("Número inválido. Tente novamente: -> ")
-			leia (quantidade)
-			} enquanto (quantidade <= 0)
+			limpa()
+			escreva ("NÚMERO INVÁLIDO. Reinicie o Programa.\n")
+			retorne
 		}
 		limpa()
 		escreva ("-------------------------------------------------------------------------\n")
@@ -117,7 +113,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1585; 
+ * @POSICAO-CURSOR = 1300; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
