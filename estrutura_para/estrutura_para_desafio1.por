@@ -5,10 +5,14 @@ programa
 	//Versﾃ｣o 1.0
 	//Data 14/03/2023
 
-	inteiro numero, qtdPar = 0, somaPar = 0
+	
 	
 	funcao inicio()
 	{
+
+		inteiro numero, qtdPar = 0, somaPar = 0
+		cadeia texto
+		
 		escreva ("-------------------------------------------------------------------------\n")
 		escreva ("                               NUMEROS PARES                             \n")
 		escreva ("-------------------------------------------------------------------------\n")
@@ -25,15 +29,17 @@ programa
 		escreva ("\n")
 		escreva ("NUMEROS PARES:\n\n")
 
+		texto = ""
 		para (inteiro i=0; i<=numero; i++)
 		{
 			se ((i % 2) == 0)
 			{
-				escreva (i + " ")
+				texto += i + " "
 				somaPar += i
 			}
 			
 		}
+		escreva (texto)
 		escreva ("\n\nVALOR DA SOMA ENTRE ELES: -> " + somaPar + "\n")
 		escreva ("\n-------------------------------------------------------------------------\n")
 		
@@ -44,9 +50,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1185; 
+ * @POSICAO-CURSOR = 1152; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {somaPar, 8, 29, 7};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

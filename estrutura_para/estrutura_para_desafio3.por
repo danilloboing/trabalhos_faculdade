@@ -23,8 +23,10 @@ programa
 		nroAleatorio = Util.sorteia(0, 20)
 		
 		para (inteiro i=1; i<=5; i++)
+		//para (inteiro i=0; i<5; i++)
 		{
 			escreva ("Sua " + i + "º tentativa: -> ")
+			//escreva ("Sua " + (i+1) + "º tentativa: -> ")
 			leia (palpite)
 		
 			se (palpite == nroAleatorio) {
@@ -46,7 +48,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1007; 
+ * @POSICAO-CURSOR = 797; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

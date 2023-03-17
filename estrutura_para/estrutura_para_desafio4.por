@@ -19,12 +19,41 @@ programa
 
 		para (inteiro i=1; i<=6; i++)
 		{
+			cadeia meses = ""
+			
 			escreva ("\n-------------------------------------------------------------------------\n")
 			escreva ("\n")
-			escreva ("Digite os ganhos do " + i + "º mês (Ex.: R$2750.50): -> R$")
+			escolha (i)
+			{
+				caso 1:
+					meses = "janeiro"
+					pare
+
+				caso 2:
+					meses = "fevereiro"
+					pare
+
+				caso 3:
+					meses = "março"
+					pare
+
+				caso 4:
+					meses = "abril"
+					pare
+
+				caso 5:
+					meses = "maio"
+					pare
+
+				caso 6:
+					meses = "junho"
+					pare
+
+			}
+			escreva ("Digite os ganhos de " + meses + " (Ex.: R$2750.50): -> R$")
 			leia (ganhoMensal)
 			ganhoTotal += ganhoMensal
-			escreva ("Digite os gastos do " + i + "º mês (Ex.: R$2750.50): -> R$")
+			escreva ("Digite os gastos de " + meses + " (Ex.: R$2750.50): -> R$")
 			leia (gastoMensal)
 			gastoTotal += gastoMensal
 						
@@ -53,7 +82,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1750; 
+ * @POSICAO-CURSOR = 1229; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

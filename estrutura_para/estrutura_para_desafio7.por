@@ -17,7 +17,7 @@ programa
 		escreva ("  Obs: Apenas números inteiros serão aceitos.\n")
 		escreva ("\n------------------------------------------------------------------------------\n\n")
 
-		para (inteiro i=1; i<=2; i++)
+		para (inteiro i=1; i<=10; i++)
 		{
 			escreva ("Informe o " + i + "º número: -> ")
 			leia (numero)
@@ -41,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1220; 
+ * @POSICAO-CURSOR = 758; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

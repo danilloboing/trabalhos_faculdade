@@ -6,7 +6,7 @@ programa
 	//Data 16/03/2023
 
 	cadeia nome
-	inteiro sexo
+	inteiro sexo, qtdFunc = 5
 	real salario, MediaSalarioFem = 0.0, MediaSalarioMasc = 0.0, salarioMasc = 0.0, salarioFem = 0.0
 	
 	funcao inicio()
@@ -19,7 +19,7 @@ programa
 		escreva ("-> Levantamento sobre os salários da equipe. Preencha o formulário abaixo: \n")
 		escreva ("\n------------------------------------------------------------------------------\n")
 
-		para (inteiro i=0; i<5; i++)
+		para (inteiro i=0; i<qtdFunc; i++)
 		{
 			escreva ("-> Digite seu nome: ")
 			leia (nome)
@@ -45,8 +45,8 @@ programa
 			}
 		escreva ("------------------------------------------------------------------------------\n")
 		}
-		MediaSalarioMasc = salarioMasc / 5
-		MediaSalarioFem = salarioFem / 5
+		MediaSalarioMasc = salarioMasc / qtdFunc
+		MediaSalarioFem = salarioFem / qtdFunc
 		
 		escreva ("\n - Média de salario masculino: R$" + MediaSalarioMasc)
 		escreva ("\n - Média de salario feminino: R$" + MediaSalarioFem)
@@ -59,7 +59,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1635; 
+ * @POSICAO-CURSOR = 1504; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

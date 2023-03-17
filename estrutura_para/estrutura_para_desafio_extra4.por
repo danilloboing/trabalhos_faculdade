@@ -14,7 +14,7 @@ programa
 		escreva ("------------------------------------------------------------------------------\n")
 		escreva ("\n")	
 
-		escreva ("Forneça 5 números inteiro aleatórios, o programa vericará quantos são maiores que 5.\n\n")
+		escreva ("Forneça 5 números inteiros aleatórios, o programa vericará quantos são maiores que 5.\n\n")
 
 		para (inteiro i=1; i<=5; i++)
 		{
@@ -33,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 783; 
+ * @POSICAO-CURSOR = 497; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -5,7 +5,7 @@ programa
 	//Versﾃ｣o 1.0
 	//Data 16/03/2023
 	
-	inteiro n1, n2, aux
+	inteiro n1, n2
 	
 	funcao inicio()
 	{
@@ -23,7 +23,7 @@ programa
 		escreva ("\n")
 		se (n1 > n2)
 		{
-			aux = n1
+			inteiro aux = n1
 			n1 = n2
 			n2 = aux
 		}
@@ -40,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 816; 
+ * @POSICAO-CURSOR = 699; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -16,7 +16,7 @@ programa
 
 		escreva ("Insira a idade de 20 pessoas, o programa mostrará quantas são maiores de idade \ne quantas são menores.\n\n")
 
-		para (inteiro i=1; i<=20; i++)
+		para (inteiro i=1; i<=2; i++)
 		{
 			escreva ("Insira a idade da " + i + "º pessoa: -> ")
 			leia (idade)
@@ -38,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 586; 
+ * @POSICAO-CURSOR = 618; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
