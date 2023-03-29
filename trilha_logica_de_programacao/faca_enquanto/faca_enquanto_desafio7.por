@@ -26,15 +26,16 @@ programa
 		real faturaPaga = valorFatura - pagamentoUsuario
 		real valorJuros = juros / 100
 
-		se (valorFatura < faturaPaga + (faturaPaga * valorJuros)) {
-			faca {
-				escreva ("Informe um valor maior pois esse não fará a fatura diminuir: -> R$")
-				leia (pagamentoUsuario)
-				faturaPaga = valorFatura - pagamentoUsuario
-				
-			} enquanto (valorFatura < faturaPaga + (faturaPaga * valorJuros))
+		//Verificando se o valor informado realmente diminuirá a fatura
+		enquanto (valorFatura < faturaPaga + (faturaPaga * valorJuros)) {
+
+			escreva ("Informe um valor maior pois esse não fará a fatura diminuir: -> R$")
+			leia (pagamentoUsuario)
+			faturaPaga = valorFatura - pagamentoUsuario
+			
 		} 
 		escreva ("\n------------------------------------------------------------------------------\n\n")
+		
 		faca {
 			mesesFatura += 1
 			escreva ("Fatura " + mesesFatura + "º mês: R$" + valorFatura + "\n")
@@ -51,7 +52,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1343; 
+ * @POSICAO-CURSOR = 1226; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

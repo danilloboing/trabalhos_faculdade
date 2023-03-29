@@ -30,7 +30,7 @@ programa
 			tentativas += 1
 			
 		} enquanto (palpite != resultado)
-
+		
 		escreva ("\n------------------------------------------------------------------------------\n")
 		escreva ("\nParabéns! Você acertou!\n")
 		escreva ("\nTentativas necessárias: " + tentativas + " vezes\n")
@@ -42,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1142; 
+ * @POSICAO-CURSOR = 940; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -42,16 +42,18 @@ programa
 
 			escreva ("Deseja adicionar mais alguma pessoa? \n [1] SIM \n [2] NÂO \n -> ")
 			leia (respostaUsuario)
-			se ((respostaUsuario < 1) ou (respostaUsuario > 2)) {
-				faca {
-					escreva ("Número inválido. Tente novamente: -> ")
-					leia (respostaUsuario)
-				} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 2))
+			
+			enquanto ((respostaUsuario < 1) ou (respostaUsuario > 2)) {
 				
-			} senao se (respostaUsuario == 2) {
+				escreva ("Número inválido. Tente novamente: -> ")
+				leia (respostaUsuario)	
+			} 
+			
+			se (respostaUsuario == 2) {
 				finalizar = verdadeiro
 			} senao {
 				qtdPessoas += 1
+				finalizar = falso
 			}
 			limpa()
 		} enquanto (finalizar == falso)
@@ -74,7 +76,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2312; 
+ * @POSICAO-CURSOR = 1481; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

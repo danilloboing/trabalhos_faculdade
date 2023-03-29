@@ -23,12 +23,13 @@ programa
 			leia (idade)
 			escreva ("Informe o gênero: \n[1] Masculino \n[2] Feminino\n -> ")
 			leia (genero)
-			se ((genero < 1) ou (genero > 2)) {
-				faca {
-					escreva ("Número inválido. Tente novamente: -> ")
-					leia (genero)
-				} enquanto ((genero < 1) ou (genero > 2))
+			
+			enquanto ((genero < 1) ou (genero > 2)) {
+				
+				escreva ("Número inválido. Tente novamente: -> ")
+				leia (genero)
 			}
+			
 			escreva ("Informe o salário (Ex.: 2622.50): R$")
 			leia (salario)
 			escolha (genero)
@@ -56,11 +57,10 @@ programa
 			escreva ("[1] Sim   [2] Não, quero finalizar\n\n-> ")
 			leia (respostaUsuario)
 			escreva ("\n------------------------------------------------------------------------------\n")
-			se ((respostaUsuario < 1) ou (respostaUsuario > 2)) {
-				faca {
+			enquanto ((respostaUsuario < 1) ou (respostaUsuario > 2)) {
+				
 					escreva ("Número inválido. Tente novamente: -> ")
 					leia (respostaUsuario)
-				} enquanto ((respostaUsuario < 1) ou (respostaUsuario > 2))
 			}
 			
 			se (respostaUsuario == 2) {
@@ -87,7 +87,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2016; 
+ * @POSICAO-CURSOR = 993; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

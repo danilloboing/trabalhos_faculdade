@@ -56,17 +56,18 @@ programa
 					}
 					escreva ("\nHá mais sócios para votar? \n [1] SIM \n [2] NÂO \n\nResposta: -> ")
 					leia (respostaUsuario)
-					se ((respostaUsuario < 1) ou (respostaUsuario > 2)) {
-						faca
-						{
+					enquanto ((respostaUsuario < 1) ou (respostaUsuario > 2)) {
+						
 						escreva ("Número inválido! Tente novamente: -> ")
 						leia (respostaUsuario)
-							
-						}enquanto ((respostaUsuario < 1) ou (respostaUsuario > 2))
+						
 					}
+					
 					limpa()
+					
 				} enquanto (respostaUsuario == 1)
 
+				//Verificação do resultado da eleição
 				se ((votoBranco + votoNulo > candOsmar) e (votoBranco + votoNulo > candAlceu) e (votoBranco + votoNulo > candArmando)){
 					resultado = "Eleição cancelada por haver mais votos brancos/nulos do que votos válidos."
 				
@@ -120,7 +121,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 86; 
+ * @POSICAO-CURSOR = 1889; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
