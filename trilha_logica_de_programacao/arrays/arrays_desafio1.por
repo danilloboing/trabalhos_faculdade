@@ -4,7 +4,7 @@ programa
 	//Feito por Danillo Boing de Souza
 	//Versﾃ｣o 1.0
 	//Data 28/03/2023
-	inteiro apart
+	inteiro apart
 	
 	funcao inicio()
 	{
@@ -115,9 +115,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3024; 
+ * @POSICAO-CURSOR = 778; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {apartamento, 12, 10, 11}-{i, 18, 15, 1}-{cont, 30, 17, 4};
+ * @SIMBOLOS-INSPECIONADOS = {apartamento, 12, 10, 11}-{i, 18, 15, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
