@@ -27,13 +27,13 @@ programa
 			escreva ("Nº do apartamento: -> ")
 			leia (apartamento[i])
 
-			para (inteiro cont=0; cont< (i-1); cont++){
+			para (inteiro cont=0; cont< i; cont++){
 				
-				se (apartamento[i] == apartamento[cont]){
+				enquanto (apartamento[i] == apartamento[cont])  {
 					
 					escreva ("Esse número já existe. Insira outro: -> ")
 					leia (apartamento[i])
-				}
+				} 
 			}
 			
 			escreva ("Sobrenome da família: -> ")
@@ -74,7 +74,7 @@ programa
 					se (pesquisaApartamento != apartamento[i]) {
 						apart = -1
 						pesquisa = falso
-					
+						limpa()
 					}
 				}
 
@@ -95,16 +95,17 @@ programa
 				leia (respostaUsuario)
 				
 				se ((respostaUsuario < 1) ou (respostaUsuario > 2)) {
-					escreva ("Número Inválido. Tente novamente: -> ")
-					leia (respostaUsuario)
-					
+					enquanto ((respostaUsuario < 1) ou (respostaUsuario > 2)){
+						escreva ("Número Inválido. Tente novamente: -> ")
+						leia (respostaUsuario)
+					}
 				} senao se (respostaUsuario == 2) {
 					finalizar = verdadeiro
 				}
 				
+				limpa()
 			}enquanto ((respostaUsuario < 1) ou (respostaUsuario > 2))
 			
-			limpa()
 		} enquanto (finalizar == falso)
 		
 	}
@@ -114,9 +115,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 801; 
+ * @POSICAO-CURSOR = 3024; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {i, 18, 15, 1}-{cont, 30, 17, 4};
+ * @SIMBOLOS-INSPECIONADOS = {apartamento, 12, 10, 11}-{i, 18, 15, 1}-{cont, 30, 17, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
