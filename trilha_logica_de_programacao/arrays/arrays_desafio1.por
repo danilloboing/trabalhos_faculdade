@@ -12,7 +12,7 @@ programa
 		inteiro apartamento[4], qtdMoradores[4], pesquisaApartamento, respostaUsuario
 		cadeia sobrenomeFamilia[4]
 		real rendaFamiliar[4]
-		logico finalizar = falso, pesquisa = falso
+		logico finalizar = falso, pesquisa = falso, validacaoApart = falso
 
 
 		para(inteiro i=0; i<4; i++){
@@ -23,18 +23,24 @@ programa
 			escreva ("\n")
 
 			escreva ("Cadastre a " + (i+1) + "º família: \n\n")
-
-			escreva ("Nº do apartamento: -> ")
-			leia (apartamento[i])
-
-			para (inteiro cont=0; cont< i; cont++){
+ 
+			faca {
 				
-				enquanto (apartamento[i] == apartamento[cont])  {
+				escreva ("Nº do apartamento: -> ")
+				leia (apartamento[i])
+
+				para (inteiro cont=0; cont<i; cont++) {
 					
-					escreva ("Esse número já existe. Insira outro: -> ")
-					leia (apartamento[i])
+					se (apartamento[i] == apartamento[cont]) {
+						validacaoApart = verdadeiro
+						pare
+						
+					} senao {
+						validacaoApart = falso
+					}
 				} 
-			}
+				
+			} enquanto (validacaoApart != falso)
 			
 			escreva ("Sobrenome da família: -> ")
 			leia (sobrenomeFamilia[i])
@@ -115,9 +121,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 778; 
+ * @POSICAO-CURSOR = 1029; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {apartamento, 12, 10, 11}-{i, 18, 15, 1};
+ * @SIMBOLOS-INSPECIONADOS = {apartamento, 12, 10, 11}-{validacaoApart, 15, 46, 14}-{i, 18, 15, 1}-{cont, 32, 18, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
