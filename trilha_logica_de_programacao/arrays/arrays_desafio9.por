@@ -1,39 +1,36 @@
 programa
 {
-	// Desafio 8
+	// Desafio 9
 	//Feito por Danillo Boing de Souza
 	//Versﾃ｣o 1.0
 	//Data 03/04/2023
 	
 	funcao inicio()
 	{
-		inteiro menorValor = 0, valores[10], contador = 0, posicaoVetor = 0
-	
+		inteiro vetorInicial[5], multiplicador, vetorFinal[5]
+		
 		escreva ("------------------------------------------------------------------------------\n")
-		escreva ("                           VETOR EM ORDEM CONTRÁRIA                        \n")
+		escreva ("                           Multiplicação entre vetores                        \n")
 		escreva ("------------------------------------------------------------------------------\n")
 		escreva ("\n")
 
-		escreva ("Informe 10 números inteiros, o programa mostrará o menor entre eles.\n\n")
+		escreva ("Digite 6 números inteiros, os 5 primeiros serão multiplicados pelo 6º.\n\n")
 
-		para (inteiro i=0; i<10; i++) {
+		para (inteiro i=0; i<5; i++) {
 			escreva ("Digite o " + (i+1) + "º número: -> ")
-			leia (valores[i])
-			se (i == 0) {
-				menorValor = valores[i]	
-			}
-
-			se (valores[i] <= menorValor) {
-				menorValor = valores[i]
-				posicaoVetor = (i + 1)
-			}
-			
+			leia (vetorInicial[i])
 		}
+		escreva ("Digite o multiplicador: -> ")
+		leia (multiplicador)
 
 		escreva ("\n------------------------------------------------------------------------------\n\n")
-		escreva ("Menor número do vetor: -> " + menorValor + "\n")
-		escreva ("Posição do menor número no vetor: -> " + posicaoVetor)
-		escreva ("\n\n------------------------------------------------------------------------------\n")
+
+		escreva ("Resultados: \n\n")
+		para (inteiro i=0; i<5; i++) {
+			vetorFinal[i] = vetorInicial[i] * multiplicador
+			escreva (vetorInicial[i] + " * " + multiplicador + " = " + vetorFinal[i] + "\n")
+		}
+		escreva ("\n------------------------------------------------------------------------------\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -41,9 +38,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1167; 
+ * @POSICAO-CURSOR = 1151; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {valores, 10, 26, 7};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

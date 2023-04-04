@@ -19,6 +19,9 @@ programa
 		para (inteiro i=0; i<10; i++) {
 			escreva ("Digite o " + (i+1) + "º número: -> ")
 			leia (vetor[i])
+			se (i == 0) {
+				vetor[i] = maiorNro
+			}
 			se (vetor[i] > maiorNro) {
 				maiorNro = vetor[i]
 			}
@@ -34,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 835; 
+ * @POSICAO-CURSOR = 139; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
