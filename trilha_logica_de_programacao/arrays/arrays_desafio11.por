@@ -38,11 +38,12 @@ programa
 			}
 			
 			//Verificando menor e maior temperatura
-			se (mediasTemp[i] < menorTemperatura) {
+			senao se (mediasTemp[i] < menorTemperatura) {
 				menorTemperatura = mediasTemp[i]
 				mesTempBaixa = contador
 			}
-			se (mediasTemp[i] > maiorTemperatura) {
+			
+			senao se (mediasTemp[i] > maiorTemperatura) {
 				maiorTemperatura = mediasTemp[i]
 				mesTempAlta = contador
 			}
@@ -64,7 +65,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 893; 
+ * @POSICAO-CURSOR = 1274; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {mediasTemp, 12, 68, 10};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
