@@ -3,37 +3,21 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro nroIdade[5]
-		inteiro maisNovo, maisVelho
+		inteiro matriz[2][2]
 
-		maisNovo = 0
-		maisVelho = 0
-
-		para (inteiro i=0; i<5; i++) {
-			escreva ("Insira a idade da " + (i+1) + "º pessoa: ")
-			leia (nroIdade[i])
-
-			se (i==0) {
-				maisVelho = nroIdade[i]
-				maisNovo = nroIdade[i]
-			}
-
-			se (maisVelho < nroIdade[i]) {
-				maisVelho = nroIdade[i]
-			}
-
-			se (maisNovo > nroIdade[i]) {
-				maisNovo = nroIdade[i]
+		para(inteiro i=0; i<2; i++) {
+			para (inteiro j=0; j<2; j++) {
+				escreva ((i+j+1) + "º valor: ")
+				leia (matriz[i][j])
 			}
 		}
-
-		msgFinal (maisVelho, maisNovo)
-	}
-
-	funcao msgFinal(inteiro maisVelho, inteiro maisNovo)
-	{
-		escreva ("\nA pessoa mais velha tem " + maisVelho + " anos")
-		escreva ("\nA pessoa mais nova tem " + maisNovo + " anos")
+		limpa()
+		para (inteiro i=0; i<2; i++) {
+			para (inteiro j=0; j<2; j++) {
+				escreva ("\n" + (i+j+1) + "º valor: " + matriz[i][j])
+				
+			}
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -41,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 544; 
+ * @POSICAO-CURSOR = 187; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
