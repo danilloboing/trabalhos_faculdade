@@ -54,8 +54,8 @@ programa
 		
 		}		
 
-		escreva ("Menor temperatura do ano: " + menorTemperatura + "°C em " + meses[mesTempBaixa] + "\n")
-		escreva ("Maior temperatura do ano: " + maiorTemperatura + "°C em " + meses[mesTempAlta] + "\n")
+		escreva ("Menor temperatura média do ano: " + menorTemperatura + "°C em " + meses[mesTempBaixa] + "\n")
+		escreva ("Maior temperatura média do ano: " + maiorTemperatura + "°C em " + meses[mesTempAlta] + "\n")
 		escreva ("\n------------------------------------------------------------------------------\n")
 	}
 }
@@ -64,7 +64,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1592; 
+ * @POSICAO-CURSOR = 893; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {mediasTemp, 12, 68, 10};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
