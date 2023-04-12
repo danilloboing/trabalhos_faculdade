@@ -20,7 +20,7 @@ programa
 			escreva ("Digite o " + (i+1) + "º número: -> ")
 			leia (vetor[i])
 			se (i == 0) {
-				vetor[i] = maiorNro
+				maiorNro = vetor[i]
 			}
 			se (vetor[i] > maiorNro) {
 				maiorNro = vetor[i]
@@ -37,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 139; 
+ * @POSICAO-CURSOR = 685; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

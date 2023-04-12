@@ -10,7 +10,7 @@ programa
 		real vetor1[5], vetor2[5], vetorResultado[5]
 		
 		escreva ("------------------------------------------------------------------------------\n")
-		escreva ("                           Multiplicação entre vetores                        \n")
+		escreva ("                           soma entre vetores                        \n")
 		escreva ("------------------------------------------------------------------------------\n")
 		escreva ("\n")
 
@@ -49,7 +49,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 514; 
+ * @POSICAO-CURSOR = 461; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
