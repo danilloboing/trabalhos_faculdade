@@ -43,7 +43,7 @@ programa
 			escreva ("--------------------------------------------------------------------------------\n")
 			escreva ("                                PESQUISA DE CLIENTES                \n")
 			escreva ("--------------------------------------------------------------------------------\n\n")
-			escreva ("        TABELA DE CLIENTES       \n\n")
+			escreva ("        TABELA DE CLIENTES:       \n\n")
 			escreva ("[1] " + clientes[0] + "\n")
 			escreva ("[2] " + clientes[1] + "\n")
 			escreva ("[3] " + clientes[2] + "\n")
@@ -57,15 +57,22 @@ programa
 
 
 			se (pesquisaClientes == 4) {
-			escreva ("\nClientes |  Mes 1 |  Mes 2 |  Mes 3 | Média Compras | Qtd Compras |\n")
 				para (inteiro i=0; i<3; i++) {
-					escreva ("   " + clientes[i])
+					escreva ("\nCliente:" + clientes[i] + "\n")
 					para (inteiro c=0; c<3; c++) {
-						escreva ("   R$"+ meses[i][c] + "    ")
+						escreva ("Mês " + (c+1) + ": R$"+ meses[i][c] + "\n")
 					}
-					escreva (mediaCompras[i] + "    " + qtdCompras[i])
+					escreva ("Média de Compras: R$" + mediaCompras[i] + "\n")
+					escreva ("Quantidade de compras: " + qtdCompras[i])
 					escreva ("\n")
 				}
+			} senao {
+				escreva ("\nCliente:" + clientes[pesquisaClientes-1] + "\n")
+				para (inteiro c=0; c<3; c++) {
+						escreva ("Mês " + (c+1) + ": R$"+ meses[pesquisaClientes-1][c] + "\n")
+				}
+				escreva ("Média de Compras: R$" + mediaCompras[pesquisaClientes-1] + "\n")
+				escreva ("Quantidade de compras: " + qtdCompras[pesquisaClientes-1] + "\n")
 			}
 
 		
@@ -89,9 +96,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2140; 
+ * @POSICAO-CURSOR = 2803; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {clientes, 12, 9, 8}-{meses, 13, 10, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
