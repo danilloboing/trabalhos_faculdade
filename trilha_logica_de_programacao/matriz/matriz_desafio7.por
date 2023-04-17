@@ -7,30 +7,45 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia equipes[4] = {" Alfa  ", " Beta  ", " Celta ", " Delta "}, resultadoEquipe = ""
+		cadeia equipes[4], resultadoEquipe = ""
 		inteiro pontuacoes[4][3], respostaUsuario, escolhaEquipe, escolhaJogo, maiorPontuacao = 0,
 		contador, menorPontuacao = 0
-		logico continuar = verdadeiro
+		logico continuar = verdadeiro, validaPontuacao = falso
 
-		escreva ("--------------------------------------------------------------------------------\n")
-		escreva ("                        PONTUAÇÕES DAS EQUIPES NO CAMPEONATO                    \n")
-		escreva ("--------------------------------------------------------------------------------\n\n")
+		para (inteiro i=0; i<4; i++) {
+			escreva ("--------------------------------------------------------------------------------\n")
+			escreva ("                        PONTUAÇÕES DAS EQUIPES NO CAMPEONATO                    \n")
+			escreva ("--------------------------------------------------------------------------------\n\n")
 
-		escreva ("Neste campeonato, 4 equipes participaram de 3 jogos. Veja os resultados:\n\n")
+			escreva ("Cadastre 4 equipes e informe o resultado de cada jogo (0 a 10).\n")
+			escreva ("Você poderá consultar os resultados após.\n\n")
 
-
-		//só para testes
-				para (inteiro i=0; i<4; i++) {
-					
-					para (inteiro c=0; c<3; c++) {
-						pontuacoes[i][c] = sorteia(0, 10)
-						
+			escreva ("Informe a " + (i+1) + "° equipe: -> ")
+			leia (equipes[i])
+			
+			para (inteiro c=0; c<3; c++) {
+				faca {
+						escreva ("Insira o resultado do jogo " + (c+1) + ": -> ")
+						leia(pontuacoes[i][c])
+							
+					para (inteiro cont=0; cont<=i-1; cont++) {
+						se (pontuacoes[i][c] == pontuacoes[cont][c]) {
+							validaPontuacao = verdadeiro
+							pare
+						} senao {
+							validaPontuacao = falso
+						}
 					}
+					escreva ("\n")
+		
+				} enquanto (validaPontuacao == verdadeiro)
+			}
+			limpa()
+		}
 					
-				}
 		faca {		
 			faca {
-				escreva ("Selecione o que você deseja ver na tabela:\n")
+				escreva ("Selecione o que você deseja:\n")
 				escreva ("[1] Ver a tabela inteira\n")
 				escreva ("[2] Ver os nomes das equipes\n")
 				escreva ("[3] Ver a pontuação de uma equipe em determinado jogo\n")
@@ -46,7 +61,7 @@ programa
 				caso 1: 
 					        escreva ("\n")
 					para (inteiro i=0; i<4; i++) {
-						escreva (equipes[i])
+						escreva (equipes[i] + "   ")
 						para (inteiro c=0; c<3; c++) {
 							escreva (pontuacoes[i][c] + "   ")
 						}
@@ -64,10 +79,10 @@ programa
 					faca {
 						limpa()
 						escreva ("\nVer a pontuação de uma equipe em determinado jogo:\n\n")
-						escreva ("[1] Alfa\n")
-						escreva ("[2] Beta\n")
-						escreva ("[3] Celta\n")
-						escreva ("[4] Delta\n")
+						escreva ("[1] " + equipes[0] + "\n")
+						escreva ("[2] " + equipes[1] + "\n")
+						escreva ("[3] " + equipes[2] + "\n")
+						escreva ("[4] " + equipes[3] + "\n")
 						escreva ("Escolha a equipe: -> ")
 						leia (escolhaEquipe)
 					} enquanto ((escolhaEquipe < 1) ou (escolhaEquipe > 4))
@@ -174,9 +189,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1333; 
+ * @POSICAO-CURSOR = 2002; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {pontuacoes, 11, 10, 10};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
