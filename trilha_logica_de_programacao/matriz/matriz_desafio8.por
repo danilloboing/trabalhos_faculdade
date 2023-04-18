@@ -30,12 +30,12 @@ programa
 					somaTotal += qtdGraos[i][j]
 				}
 			}
-				
+
 				matriz += "\n"
 		}
 	escreva (matriz)
 	escreva ("\n\nA quantidade total de grão no tabuleiro é de " + somaTotal + " grãos.\n")
-	escreva ("\n--------------------------------------------------------------------------------\n")
+	escreva ("\n--------------------------------------------------------------------------------\n\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -43,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1225; 
+ * @POSICAO-CURSOR = 991; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {qtdGraos, 10, 10, 8};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
