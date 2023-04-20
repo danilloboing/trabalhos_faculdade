@@ -1,5 +1,10 @@
 programa
 {
+	// Desafio 4
+	//Feito por Danillo Boing de Souza
+	//Versﾃ｣o 1.0
+	//Data 19/04/2023
+
 	inteiro numeros[3], maiorNumero
 	
 	funcao inicio()
@@ -41,9 +46,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 348; 
+ * @POSICAO-CURSOR = 46; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {numeros, 3, 9, 7};
+ * @SIMBOLOS-INSPECIONADOS = {numeros, 8, 9, 7};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
