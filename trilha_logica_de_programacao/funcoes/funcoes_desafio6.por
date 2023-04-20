@@ -1,42 +1,37 @@
 programa
 {
-	// Desafio 5
+	// Desafio 6
 	//Feito por Danillo Boing de Souza
 	//Versﾃ｣o 1.0
-	//Data 20/04/2023	
-
+	//Data 20/04/2023
+	
 	inteiro numero
-	cadeia saida = "O número é "
 	
 	funcao inicio()
 	{
 		escreva ("--------------------------------------------------------------------------------\n")
-		escreva ("Este programa receberá 1 número inteiro e falará se é negativo, positivo ou 0.\n\n")
+		escreva ("Este programa receberá 1 número inteiro e fará a tabuada.\n\n")
+
 		numero = insereNum()
-		escreva (saida)
 		escreva ("\n--------------------------------------------------------------------------------\n")
 	}
 
-	funcao inteiro insereNum () 
+	funcao inteiro insereNum() 
 	{
 		escreva ("Insira um número inteiro (Ex.: 10): -> ")
 		leia (numero)
-		retorne verificaNum(numero)
+		escreva("\n")
+		retorne realizaTabuada(numero)
 	}
 
-	funcao inteiro verificaNum(inteiro x)
+	funcao inteiro realizaTabuada(inteiro x)
 	{
-		se (x < 0) {
-			saida += "negativo"
+		para (inteiro i=1; i<=7; i++) {
+			inteiro resultado = x * i
+			escreva (x + " * " + i + " = " + resultado + "\n")
 			
-		} senao se (x == 0) {
-			saida += "0"
-			
-		}senao {
-			saida += "positivo"
 		}
-
-		retorne numero
+		retorne x
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -44,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 544; 
+ * @POSICAO-CURSOR = 777; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
