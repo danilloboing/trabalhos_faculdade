@@ -7,7 +7,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro qtdGraos[4][4], somaTotal = 0
+		inteiro qtdGraos[4][4], somaTotal = 0, valor = 2
 		cadeia matriz = ""
 
 		escreva ("--------------------------------------------------------------------------------\n")
@@ -19,16 +19,10 @@ programa
 
 		para (inteiro i=0; i<4; i++) {
 			para (inteiro j=0; j<4; j++) {
-				se (i==0) {
-					qtdGraos[i][j] = i + j + 1
-					matriz += " " + qtdGraos[i][j] + " "
-					somaTotal += qtdGraos[i][j]
-					
-				} senao {
-					qtdGraos[i][j] = qtdGraos[i-1][j] + 4
-					matriz += " " + qtdGraos[i][j] + " "
-					somaTotal += qtdGraos[i][j]
-				}
+				somaTotal += valor
+				qtdGraos[i][j] = valor
+				matriz += qtdGraos[i][j] + "     "
+				valor *= 2
 			}
 
 				matriz += "\n"
@@ -43,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 991; 
+ * @POSICAO-CURSOR = 135; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {qtdGraos, 10, 10, 8};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

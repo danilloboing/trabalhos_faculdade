@@ -24,12 +24,12 @@ programa
 		retorne verificaNum(numero)
 	}
 
-	funcao inteiro verificaNum(inteiro x)
+	funcao inteiro verificaNum(inteiro numero)
 	{
-		se (x < 0) {
+		se (numero < 0) {
 			saida += "negativo"
 			
-		} senao se (x == 0) {
+		} senao se (numero == 0) {
 			saida += "0"
 			
 		}senao {
@@ -44,7 +44,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 544; 
+ * @POSICAO-CURSOR = 395; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

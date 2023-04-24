@@ -5,7 +5,7 @@ programa
 	//Versﾃ｣o 1.0
 	//Data 19/04/2023
 	
-	inclua biblioteca Matematica --> m
+	inclua biblioteca Matematica --> m
 	
 	funcao inicio()
 	{
@@ -28,7 +28,7 @@ programa
 		retorne valorCompra
 	}
 
-	funcao inteiro calculaDesconto (inteiro valorCompra)
+	funcao calculaDesconto (inteiro valorCompra)
 	{
 		se (valorCompra <= 100) {
 			escreva ("Desconto: R$0,00")
@@ -42,7 +42,6 @@ programa
 			escreva ("\nValor c/ desconto: R$" + m.arredondar(valorCompra * 0.7, 2))
 		}
 
-		retorne valorCompra
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -50,7 +49,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 94; 
+ * @POSICAO-CURSOR = 886; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

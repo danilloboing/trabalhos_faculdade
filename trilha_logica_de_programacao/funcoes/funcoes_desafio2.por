@@ -28,11 +28,11 @@ programa
 		retorne anoNasc
 	}
 
-	funcao inteiro calculaIdade(inteiro ano)
+	funcao calculaIdade(inteiro ano)
 	{
 		inteiro idadeEm2021 = 2021 - ano
 		escreva ("Em 2021 você tinha " + idadeEm2021 + " anos.")
-		retorne idadeEm2021
+		 
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -40,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 821; 
+ * @POSICAO-CURSOR = 823; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

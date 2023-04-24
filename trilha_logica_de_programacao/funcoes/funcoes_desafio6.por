@@ -13,6 +13,7 @@ programa
 		escreva ("Este programa receberá 1 número inteiro e fará a tabuada.\n\n")
 
 		numero = insereNum()
+		realizaTabuada (numero)
 		escreva ("\n--------------------------------------------------------------------------------\n")
 	}
 
@@ -21,17 +22,16 @@ programa
 		escreva ("Insira um número inteiro (Ex.: 10): -> ")
 		leia (numero)
 		escreva("\n")
-		retorne realizaTabuada(numero)
+		retorne numero
 	}
 
-	funcao inteiro realizaTabuada(inteiro x)
+	funcao realizaTabuada(inteiro numero1)
 	{
 		para (inteiro i=1; i<=7; i++) {
-			inteiro resultado = x * i
-			escreva (x + " * " + i + " = " + resultado + "\n")
+			inteiro resultado = numero1 * i
+			escreva (numero1 + " * " + i + " = " + resultado + "\n")
 			
-		}
-		retorne x
+		} 
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -39,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 777; 
+ * @POSICAO-CURSOR = 357; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -5,7 +5,7 @@ programa
 	//Versﾃ｣o 1.0
 	//Data 19/04/2023
 	
-	cadeia nome
+	cadeia nome
 	inteiro idade
 	
 	funcao inicio()
@@ -31,10 +31,10 @@ programa
 		retorne idade
 	}
 
-	funcao saidas (cadeia x, inteiro y)
+	funcao saidas (cadeia nomeUsuario, inteiro idadeUsuario)
 	{
-		escreva ("\nNome da pessoa: " + x)
-		escreva ("\nIdade da pessoa: " + y)
+		escreva ("\nNome da pessoa: " + nomeUsuario)
+		escreva ("\nIdade da pessoa: " + idadeUsuario)
 		
 	}
 }
@@ -43,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 659; 
+ * @POSICAO-CURSOR = 533; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
