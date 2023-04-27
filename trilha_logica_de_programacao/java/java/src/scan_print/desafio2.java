@@ -1,4 +1,4 @@
-package exemplo;
+package scan_print;
 import java.util.Scanner;
 
 public class desafio2 {
