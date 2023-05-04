@@ -17,35 +17,28 @@ public class desafio3 {
 
     } while ((numero < 1) || (numero > 7));
 
-    switch (numero) {
-      case 1:
-        System.out.println("\n" + numero + " = Domingo");
-      break;
+    if (numero == 1) {
+      System.out.println("\n" + numero + " = Domingo");
 
-      case 2:
-        System.out.println("\n" + numero + " = Segunda-feira");
-      break;
-      
-      case 3:
-        System.out.println("\n" + numero + " = Terça-feira");
-      break;
-      
-      case 4:
-        System.out.println("\n" + numero + " = Quarta-feira");
-      break;
-      
-      case 5:
-        System.out.println("\n" + numero + " = Quinta-feira");
-      break;
-      
-      case 6:
-        System.out.println("\n" + numero + " = Sexta-feira");
-      break;
-      
-      case 7:
-        System.out.println("\n" + numero + " = Sábado");
-        break;
+    } else if (numero == 2) {
+      System.out.println("\n" + numero + " = Segunda-feira");
+
+    } else if (numero == 3) {
+      System.out.println("\n" + numero + " = Terça-feira");
+
+    } else if (numero == 4) {
+      System.out.println("\n" + numero + " = Quarta-feira");
+
+    } else if (numero == 5) {
+      System.out.println("\n" + numero + " = Quinta-feira");
+
+    } else if (numero == 6) {
+      System.out.println("\n" + numero + " = Sexta-feira");
+
+    } else {
+      System.out.println("\n" + numero + " = Sábado");
     }
+  
     System.out.println("\n------------------------------------------------------------------------");
 
     scanner.close();

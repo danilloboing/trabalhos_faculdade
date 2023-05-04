@@ -27,24 +27,70 @@ public class desafio8 {
       classificacaoIndicativa = scanner.nextInt();
     } while ((classificacaoIndicativa < 1) || (classificacaoIndicativa > 6));
 
-    if ((classificacaoIndicativa ==1) && (duracaoFilme <= 60)) {
-      categoriaIndicada += "Infantil";
-      
-    } else if ((classificacaoIndicativa ==1) && (duracaoFilme > 60)) {
-      categoriaIndicada += "Não recomendado";
-      
-    } else if ((classificacaoIndicativa <= 4) && (duracaoFilme <= 120)) {
-      categoriaIndicada += "Adolescente";
-      
-    } else if (classificacaoIndicativa <= 6) {
-      categoriaIndicada += "Adulto";
-      
-    } else {
-      categoriaIndicada += "Infantil";
-      
-    }
-
+    switch (classificacaoIndicativa) {
+      case 1:
+        if (duracaoFilme <= 60) {
+          categoriaIndicada += "Infantil";
+          
+        } else if(duracaoFilme <= 120){
+          categoriaIndicada += "Adolescente - Não recomendado para menores de 10 anos";
+          
+        } else {
+          categoriaIndicada += "Adolescente - Não recomendado para menores de 14 anos";
+        }
+        break;
     
+      case 2:
+        if (duracaoFilme <= 120) {
+          categoriaIndicada += "Adolescente - Não recomendado para menores de 10 anos";
+
+        } else {
+          categoriaIndicada += "Adolescente - Não recomendado para menores de 14 anos";
+        }
+      break;
+
+      case 3:
+        if (duracaoFilme <= 120) {
+          categoriaIndicada += "Adolescente - Não recomendado para menores de 12 anos";
+
+        } else {
+          categoriaIndicada += "Adolescente - Não recomendado para menores de 14 anos";
+        }
+      break;
+
+      case 4:
+        if (duracaoFilme <= 120) {
+          categoriaIndicada += "Adolescente - Não recomendado para menores de 14 anos";
+
+        } else {
+          categoriaIndicada += "Adulto - Não recomendado para menores de 16";
+        }
+      break;
+
+      case 5:
+        if (duracaoFilme <= 120) {
+          categoriaIndicada += "Adulto - Não recomendado para menores de 16 anos";
+
+        } else {
+          categoriaIndicada += "Adulto - Não recomendado para menores de 18";
+        }
+      break;
+
+      case 6:
+        categoriaIndicada += "Adulto - Não recomendado para menores de 18";
+      break;
+
+      default:
+        categoriaIndicada += "ERRO";
+      break;
+    }
+      
+
+    System.out.println("\nVerificando...\n");
+    
+    System.out.println("Filme: " + nomeFilme);
+    System.out.println("Categoria indicada: " + categoriaIndicada);
+    System.out.println("-------------------------------------------------------------------------------");
 
     scanner.close();
   }
