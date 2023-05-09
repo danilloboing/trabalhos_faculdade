@@ -29,7 +29,7 @@ public class desafio4 {
       parametro2 = numeros[1];
     }
 
-    for (int i = parametro1; i <= parametro2; i++) {
+    for (int i = parametro1 + 1; i < parametro2; i++) {
       somaTotal += i;
       contador++;
     }
