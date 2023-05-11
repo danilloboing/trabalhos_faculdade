@@ -10,7 +10,6 @@ public class desafio3 {
     double resultado = 0.0;
     int respostaUsuario;
     String pararOuContinuar;
-    String pararOuContinuaruUpperCase;
     boolean continuar = false;
  
     System.out.println("------------------------------------------------------------------------\n");
