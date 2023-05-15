@@ -37,13 +37,14 @@ public class desafio5 {
       System.out.println("\n-----------------------------------------------------------------");
     }
 
+    System.out.println("\n-------- N O T A S --------\n");
+
     for (int i = 0; i < mediasAlunos.length; i++) {
       System.out.println("Aluno " + (i+1));
       System.out.println("Média bimestral: " + mediasAlunos[i]);
       System.out.println("-------------------------------------------------------------------\n");
     }
 
-    System.out.println("---------------------------------------------------------------------");
     sc.close();
   }
 }
