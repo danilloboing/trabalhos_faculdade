@@ -5,6 +5,7 @@ import java.text.DecimalFormat;
 public class desafio6 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    DecimalFormat arredondar = new DecimalFormat("0.00");
 
     double peso;
     double altura;
@@ -24,7 +25,6 @@ public class desafio6 {
       altura = sc.nextDouble();
 
       imc = peso / (altura*altura);
-      DecimalFormat arredondar = new DecimalFormat("0.00");
       imcArredondado = arredondar.format(imc);
 
       if (imc < 18.5) {
@@ -42,12 +42,12 @@ public class desafio6 {
       System.out.println("-------------------------------------------------------------------------------");
       
       System.out.println("\nDigite 'CONTINUAR' para calcular novamente ou 'FINALIZAR' para encerrar o programa");
-      pararOuContinuar = sc.nextLine();
+      pararOuContinuar = sc.next();
       pararOuContinuar = pararOuContinuar.toUpperCase();
       
       while ((!pararOuContinuar.equals("CONTINUAR")) && (!pararOuContinuar.equals("FINALIZAR"))) {
         System.out.println("Palavra inválida! Tente novamente.");
-        pararOuContinuar = sc.nextLine();
+        pararOuContinuar = sc.next();
         pararOuContinuar = pararOuContinuar.toUpperCase();
       }
       
