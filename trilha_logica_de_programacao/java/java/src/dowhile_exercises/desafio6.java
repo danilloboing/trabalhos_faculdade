@@ -43,9 +43,9 @@ public class desafio6 {
       
       System.out.println("\nDigite 'CONTINUAR' para calcular novamente ou 'FINALIZAR' para encerrar o programa");
       pararOuContinuar = sc.next();
-      pararOuContinuar = pararOuContinuar.toUpperCase();
+    //  pararOuContinuar = pararOuContinuar.toUpperCase();
       
-      while ((!pararOuContinuar.equals("CONTINUAR")) && (!pararOuContinuar.equals("FINALIZAR"))) {
+      while ((!pararOuContinuar.equalsIgnoreCase("CONTINUAR")) && (!pararOuContinuar.equals("FINALIZAR"))) {
         System.out.println("Palavra inválida! Tente novamente.");
         pararOuContinuar = sc.next();
         pararOuContinuar = pararOuContinuar.toUpperCase();

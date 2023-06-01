@@ -1,4 +1,5 @@
 package dowhile_exercises;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class desafio7 {
@@ -14,6 +15,9 @@ public class desafio7 {
     double salarioTotal = 0;
     double maiorSalario = 0;
     boolean continuar = false;
+    DecimalFormat df = new DecimalFormat("0.00");
+  //5
+  //  df.setMaximumFractionDigits(2);
     String nome;
     String salarioMenorQue1000 = "";
     String pararOuContinuar;
@@ -77,7 +81,7 @@ public class desafio7 {
     System.out.println("Media de idade da população: " + (somaIdade / respondentes));
     System.out.println("Filhos p/ cidadão: " + (somaFilhos / respondentes));
     System.out.println("Media salarial da população: R$" + (salarioTotal / respondentes));
-    System.out.println("Maior salário entre os respondentes: R$" + maiorSalario);
+    System.out.println("Maior salário entre os respondentes: R$" + df.format(maiorSalario));
     System.out.println("Pessoas que ganham menos que R$1000,00: " + salarioMenorQue1000);
     
     System.out.println("\n---------------------------------------------------------------------------------\n");
