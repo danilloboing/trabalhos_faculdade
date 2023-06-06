@@ -22,7 +22,6 @@ public class desafio2 {
 
   public static void calculaIdade(int anoNasc) {
     int idade = 2021 - anoNasc;
-    System.out.println(idade);
 
     if (idade > 0) {
       JOptionPane.showMessageDialog(
