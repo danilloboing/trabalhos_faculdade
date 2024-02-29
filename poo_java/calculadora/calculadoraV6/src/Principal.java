@@ -1,47 +1,43 @@
 import javax.swing.JOptionPane;
 
+import modelo.Divisao;
+import modelo.Multiplicacao;
+import modelo.Operacoes;
+import modelo.Soma;
+import modelo.Subtracao;
+import visualizacao.EntradaSaida;
+
 public class Principal {
 
   public static void main(String[] args) {
 
     int continuar;
+    double resultado = 0;
+    Operacoes oper = null;
 
     do {
       double num1 = EntradaSaida.solicitaNumero("1º");
       double num2 = EntradaSaida.solicitaNumero("2º");
-      double resultado = 0;
       int operacao = EntradaSaida.solicitaOperacao();
 
       switch (operacao) {
         case 1:
-          Soma soma = new Soma();
-          soma.setNum1(num1);
-          soma.setNum2(num2);
-          resultado = soma.calcula();
+          oper = new Soma();
           break;
 
         case 2:
-          Subtracao sub = new Subtracao();
-          sub.setNum1(num1);
-          sub.setNum2(num2);
-          resultado = sub.calcula();
+          oper = new Subtracao();
           break;
 
         case 3:
-          Multiplicacao multi = new Multiplicacao();
-          multi.setNum1(num1);
-          multi.setNum2(num2);
-          resultado = multi.calcula();
+          oper = new Multiplicacao();
           break;
 
         case 4:
           while (num2 == 0) {
             num2 = EntradaSaida.solicitaNumero("2º");
           }
-          Divisao divi = new Divisao();
-          divi.setNum1(num1);
-          divi.setNum2(num2);
-          resultado = divi.calcula();
+          oper = new Divisao();
           break;
 
         default:
@@ -49,6 +45,9 @@ public class Principal {
           System.exit(0);
           break;
       }
+      oper.setNum1(num1);
+      oper.setNum2(num2);
+      resultado = oper.calcula();
       EntradaSaida.mostraResultado(resultado, operacao);
 
       continuar = Integer.parseInt(JOptionPane.showInputDialog("Deseja continuar calculando? \n1- Sim \n2- Não"));
